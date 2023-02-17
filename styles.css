@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+}
+
+body{
+    width: 100vw;  
+    min-height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.container {
+    width: 90%;
+    height: 87%;
+    background-color: white;
+    display: flex;
+    margin: 25px 15px;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.main-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.main-image-desktop {
+    display: none;
+}
+
+.content{
+    padding: 20px 25px;
+    display: flex;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    margin-top: 10px;
+    color: #1d2226;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #83838a;
+}
+
+p{  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #83838a;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.price {
+    width: 100%;
+    height: fit-content;
+    margin-top: 15px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.curr-price{
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    color: #3c7862;
+    letter-spacing: normal;
+}
+
+.real-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #83838a;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.cart {
+    color: white;
+    border: none;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    background-color: var(--dark-cyan);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button:focus{
+    background-color: #1a4031;
+}
+
+@media only screen and (min-width: 768px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 80%;
+        height: 40%;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .img-wrapper {
+        width: 50%;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .main-image-desktop {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .content {
+        width: 50%;
+        padding: 35px 35px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .button {
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #1a4031;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 50%;
+        height: 40%;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .img-wrapper {
+        width: 50%;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .main-image-desktop {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .content {
+        width: 50%;
+        padding: 35px 35px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .button {
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #1a4031;
+    }
+}
